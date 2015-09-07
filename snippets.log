@@ -1,37 +1,15 @@
-ERROR:root:FIXME: Unimplemented - put('list', 'A sequence of things - created using []')
-ERROR:root:FIXME: Unimplemented - get('list')
-INFO:root:Constructing parser
-INFO:root:Constructing parser
-INFO:root:Constructing parser
-INFO:root:Constructing parser
-INFO:root:Constructing parser
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='list', snippet='list 1 2 3 ')
+DEBUG:root:--------------------
+arguments.__dict__
+{'name': 'list', 'snippet': 'list 1 2 3 ', 'command': 'put'}
+DEBUG:root:--------------------
+locals()
+{'parser': ArgumentParser(prog='snippets.py', usage=None, description='Store and retrieve snippets of text', formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True), 'put_parser': ArgumentParser(prog='snippets.py put', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True), 'get_parser': ArgumentParser(prog='snippets.py get', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True), 'subparsers': _SubParsersAction(option_strings=[], dest='command', nargs='A...', const=None, default=None, type=None, choices=OrderedDict([('put', ArgumentParser(prog='snippets.py put', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)), ('get', ArgumentParser(prog='snippets.py get', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True))]), help='Available commands', metavar=None), 'arguments': Namespace(command='put', name='list', snippet='list 1 2 3 ')}
+DEBUG:root:--------------------
+vars(arguments))
+{'name': 'list', 'snippet': 'list 1 2 3 ', 'command': 'put'}
+ERROR:root:FIXME: Unimplemented - put('list', 'list 1 2 3 ')
