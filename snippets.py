@@ -1,4 +1,5 @@
 import argparse
+import sys
 import logging
 
 # Set the log output file, and the log level
@@ -27,8 +28,21 @@ def main():
     """Main function"""
     logging.info("Constructing parser")
     parser = argparse.ArgumentParser(description="Store and retrieve snippets of text")
-    arguments = parser.parse_args()
+
+    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+
+    # Subparser for the put command
+    logging.debug("Constructing put subparser")
+    put_parser = subparsers.add_parser("put", help="Store a snippet")
+    put_parser.add_argument("name", help="The name of the snippet")
+    put_parser.add_argument("snippet", help="The snippet text")
+
+    arguments = parser.parse_args(sys.argv[1:])
+    arguments2 = parser.parse_args()
+    print ('-'*20)
     print (arguments)
+    print ('-'*20)
+    print (arguments2)
 
 if __name__ == "__main__":
     main()
