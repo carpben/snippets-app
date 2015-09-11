@@ -1,15 +1,93 @@
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
 parser.parse_args():
-Namespace(command='put', name='list', snippet='list 1 2 3 ')
+Namespace(command='put', name='Test', snippet='This is a test snippet')
+INFO:root:Storing snippet 'Test': 'This is a test snippet'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
-arguments.__dict__
-{'name': 'list', 'snippet': 'list 1 2 3 ', 'command': 'put'}
+parser.parse_args():
+Namespace(command='get', name='Test')
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
-locals()
-{'parser': ArgumentParser(prog='snippets.py', usage=None, description='Store and retrieve snippets of text', formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True), 'put_parser': ArgumentParser(prog='snippets.py put', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True), 'get_parser': ArgumentParser(prog='snippets.py get', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True), 'subparsers': _SubParsersAction(option_strings=[], dest='command', nargs='A...', const=None, default=None, type=None, choices=OrderedDict([('put', ArgumentParser(prog='snippets.py put', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)), ('get', ArgumentParser(prog='snippets.py get', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True))]), help='Available commands', metavar=None), 'arguments': Namespace(command='put', name='list', snippet='list 1 2 3 ')}
+parser.parse_args():
+Namespace(command='get', name='Test')
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
-vars(arguments))
-{'name': 'list', 'snippet': 'list 1 2 3 ', 'command': 'put'}
-ERROR:root:FIXME: Unimplemented - put('list', 'list 1 2 3 ')
+parser.parse_args():
+Namespace(command='get', name='Test')
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='Test')
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='Test')
+DEBUG:root:--------------------
+arguments:{'name': 'Test'}
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='def', snippet='Block of code which program can reuse')
+DEBUG:root:--------------------
+arguments:{'snippet': 'Block of code which program can reuse', 'name': 'def'}
+INFO:root:Storing snippet 'def': 'Block of code which program can reuse'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='Test')
+DEBUG:root:--------------------
+arguments:{'name': 'Test'}
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='Test')
+DEBUG:root:--------------------
+arguments:{'name': 'Test'}
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='Test')
+DEBUG:root:--------------------
+arguments:{'name': 'Test'}
+INFO:root:Retriving snippet 'Test'.
+DEBUG:root:Snippet Retrieved successfully.
