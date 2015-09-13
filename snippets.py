@@ -16,17 +16,13 @@ def put(name, snippet):
     """
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     with connection, connection.cursor() as cursor:
-        cursor.execute("insert into snippets values (%s, %s)", (name, snippet))
-    """cursor = connection.cursor()
-    try:
-        command = "insert into snippets values (%s, %s)"
-        cursor.execute(command, (name, snippet))
-    except psycopg2.IntegrityError as e:
-        connection.rollback()
-        command = "update snippets set message=%s where keyword=%s"
-        cursor.execute(command, (snippet, name))
-    connection.commit()
-    """
+        try: 
+            command = "insert into snippets values (%s, %s)"
+            cursor.execute(command, (name, snippet))
+        except psycopg2.IntegrityError as e:
+            connection.rollback()
+            command = "update snippets set message=%s where keyword=%s"
+            cursor.execute(command, (snippet, name))
     logging.debug("Snippet stored successfully.")
     return name, snippet
     
@@ -45,6 +41,26 @@ def get(name):
         # No snippet was found with that name.
         return snippet
     return snippet[0]
+
+def catalog():
+    """
+    Presents a Catalog of Snippets names. 
+    """
+    logging.info("About to present catalog of names.")
+    with connection, connection.cursor() as cursor:
+        cursor.execute("select keyword from snippets")
+        catalog = cursor.fetchall()
+    return catalog
+
+def search(string): 
+    """
+    Searches for snippets with the string
+    """
+    logging.info("About to search for snippets with the the string:'{}'".format(string))
+    with connection, connection.cursor() as cursor:
+        cursor.execute("select * from snippets where message like '%{}%'".format(string))
+        results = cursor.fetchall()
+        return results
     
 def main():
     """Main function"""
@@ -63,16 +79,17 @@ def main():
     get_parser = subparsers.add_parser("get", help="Retrieve a snippet")
     get_parser.add_argument("name", help="The name of the snippet")
     
+    catalog_parser=subparsers.add_parser("catalog", help="Presents a catalog of snippets names")
+    
+    search_parser=subparsers.add_parser("search", help="User provides a string. Prgram Searches for snippets with the string andprints results to screen.")
+    search_parser.add_argument("string", help="String to search for")
+    
     logging.debug('{}\nparser.parse_args():\n{}'.format('-'*20, parser.parse_args()))
     
     arguments = parser.parse_args()
     # Convert parsed arguments from Namespace to dictionary
-    """
-    logging.debug('{}\narguments.__dict__\n{}'.format('-'*20, arguments.__dict__))
-    logging.debug('{}\nlocals()\n{}'.format('-'*20, locals()))
-    logging.debug('{}\nvars(arguments))\n{}'.format('-'*20, vars(arguments)))
-    """
     arguments = vars(arguments)
+    
     command = arguments.pop("command")
     logging.debug('{}\narguments:{}'.format('-'*20, arguments))
     
@@ -85,7 +102,14 @@ def main():
             print("No snippet stored for name: '{}'".format(arguments['name']))
         else: 
             print("Retrieved snippet: {!r}".format(snippet))
-    
+    elif command == "catalog":
+        cata=catalog()
+        print (cata)
+    elif command == "search": 
+        results = search(**arguments)
+        print results
+    else: 
+        "Command not recognized." 
     
 if __name__ == "__main__":
     main()

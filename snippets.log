@@ -173,3 +173,144 @@ Namespace(command='put', name='for', snippet='test')
 DEBUG:root:--------------------
 arguments:{'name': 'for', 'snippet': 'test'}
 INFO:root:Storing snippet 'for': 'test'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='module', snippet='Its a little difficult to define. I will probably say it is python liberaries, which allow extra functionality.')
+DEBUG:root:--------------------
+arguments:{'name': 'module', 'snippet': 'Its a little difficult to define. I will probably say it is python liberaries, which allow extra functionality.'}
+INFO:root:Storing snippet 'module': 'Its a little difficult to define. I will probably say it is python liberaries, which allow extra functionality.'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='module')
+DEBUG:root:--------------------
+arguments:{'name': 'module'}
+INFO:root:Retriving snippet 'module'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: ('Its a little difficult to define. I will probably say it is python liberaries, which allow extra functionality.',)
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='module', snippet='Liberaries that allow extra functionality')
+DEBUG:root:--------------------
+arguments:{'name': 'module', 'snippet': 'Liberaries that allow extra functionality'}
+INFO:root:Storing snippet 'module': 'Liberaries that allow extra functionality'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='module')
+DEBUG:root:--------------------
+arguments:{'name': 'module'}
+INFO:root:Retriving snippet 'module'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: ('Liberaries that allow extra functionality',)
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='catalog')
+DEBUG:root:--------------------
+arguments:{}
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='catalog')
+DEBUG:root:--------------------
+arguments:{}
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='catalog')
+DEBUG:root:--------------------
+arguments:{}
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='catalog')
+DEBUG:root:--------------------
+arguments:{}
+INFO:root:About to present catalog of names.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='catalog')
+DEBUG:root:--------------------
+arguments:{}
+INFO:root:About to present catalog of names.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='search', string='function')
+DEBUG:root:--------------------
+arguments:{'string': 'function'}
+INFO:root:About to search for snippets with the the string:'function'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='search', string='that')
+DEBUG:root:--------------------
+arguments:{'string': 'that'}
+INFO:root:About to search for snippets with the the string:'that'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='search', string='prints')
+DEBUG:root:--------------------
+arguments:{'string': 'prints'}
+INFO:root:About to search for snippets with the the string:'prints'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='search', string='control')
+DEBUG:root:--------------------
+arguments:{'string': 'control'}
+INFO:root:About to search for snippets with the the string:'control'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='search', string='loop')
+DEBUG:root:--------------------
+arguments:{'string': 'loop'}
+INFO:root:About to search for snippets with the the string:'loop'
