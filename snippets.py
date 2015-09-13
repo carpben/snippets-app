@@ -34,8 +34,11 @@ def get(name):
     cursor.execute(command, (name,))
     snippet=cursor.fetchone()
     connection.commit()
-    logging.debug("Snippet Retrieved successfully.")
-    return snippet
+    logging.debug("Snippet Retrieved successfully. Snippet Value: {}".format(snippet))
+    if snippet == None:
+        # No snippet was found with that name.
+        return snippet
+    return snippet[0]
     
 def main():
     """Main function"""
@@ -72,7 +75,10 @@ def main():
         print("Stored {!r} as {!r}".format(snippet, name))
     elif command == "get":
         snippet = get(**arguments)
-        print("Retrieved snippet: {!r}".format(snippet))
+        if snippet==None: 
+            print("No snippet stored for name: '{}'".format(arguments['name']))
+        else: 
+            print("Retrieved snippet: {!r}".format(snippet))
     
     
 if __name__ == "__main__":

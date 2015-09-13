@@ -4,90 +4,63 @@ INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
 parser.parse_args():
-Namespace(command='put', name='Test', snippet='This is a test snippet')
-INFO:root:Storing snippet 'Test': 'This is a test snippet'
-DEBUG:root:Snippet stored successfully.
+Namespace(command='get', name='while')
+DEBUG:root:--------------------
+arguments:{'name': 'while'}
+INFO:root:Retriving snippet 'while'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: None
 DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Database connection established.
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
 parser.parse_args():
-Namespace(command='get', name='Test')
-INFO:root:Retriving snippet 'Test'.
+Namespace(command='get', name='while')
+DEBUG:root:--------------------
+arguments:{'name': 'while'}
+INFO:root:Retriving snippet 'while'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: None
 DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Database connection established.
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
 parser.parse_args():
-Namespace(command='get', name='Test')
-INFO:root:Retriving snippet 'Test'.
+Namespace(command='get', name='while')
+DEBUG:root:--------------------
+arguments:{'name': 'while'}
+INFO:root:Retriving snippet 'while'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: None
 DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Database connection established.
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
 parser.parse_args():
-Namespace(command='get', name='Test')
-INFO:root:Retriving snippet 'Test'.
+Namespace(command='get', name='while')
+DEBUG:root:--------------------
+arguments:{'name': 'while'}
+INFO:root:Retriving snippet 'while'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: None
 DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Database connection established.
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
 parser.parse_args():
-Namespace(command='get', name='Test')
-INFO:root:Retriving snippet 'Test'.
+Namespace(command='get', name='while')
+DEBUG:root:--------------------
+arguments:{'name': 'while'}
+INFO:root:Retriving snippet 'while'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: None
 DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Database connection established.
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:--------------------
 parser.parse_args():
-Namespace(command='get', name='Test')
+Namespace(command='get', name='def')
 DEBUG:root:--------------------
-arguments:{'name': 'Test'}
-INFO:root:Retriving snippet 'Test'.
-DEBUG:root:Connecting to PostgreSQL
-DEBUG:root:Database connection established.
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-DEBUG:root:--------------------
-parser.parse_args():
-Namespace(command='put', name='def', snippet='Block of code which program can reuse')
-DEBUG:root:--------------------
-arguments:{'snippet': 'Block of code which program can reuse', 'name': 'def'}
-INFO:root:Storing snippet 'def': 'Block of code which program can reuse'
-DEBUG:root:Snippet stored successfully.
-DEBUG:root:Connecting to PostgreSQL
-DEBUG:root:Database connection established.
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-DEBUG:root:--------------------
-parser.parse_args():
-Namespace(command='get', name='Test')
-DEBUG:root:--------------------
-arguments:{'name': 'Test'}
-INFO:root:Retriving snippet 'Test'.
-DEBUG:root:Connecting to PostgreSQL
-DEBUG:root:Database connection established.
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-DEBUG:root:--------------------
-parser.parse_args():
-Namespace(command='get', name='Test')
-DEBUG:root:--------------------
-arguments:{'name': 'Test'}
-INFO:root:Retriving snippet 'Test'.
-DEBUG:root:Connecting to PostgreSQL
-DEBUG:root:Database connection established.
-INFO:root:Constructing parser
-DEBUG:root:Constructing put subparser
-DEBUG:root:--------------------
-parser.parse_args():
-Namespace(command='get', name='Test')
-DEBUG:root:--------------------
-arguments:{'name': 'Test'}
-INFO:root:Retriving snippet 'Test'.
-DEBUG:root:Snippet Retrieved successfully.
+arguments:{'name': 'def'}
+INFO:root:Retriving snippet 'def'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: ('Block of code which program can reuse',)
