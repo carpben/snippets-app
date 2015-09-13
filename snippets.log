@@ -64,3 +64,112 @@ DEBUG:root:--------------------
 arguments:{'name': 'def'}
 INFO:root:Retriving snippet 'def'.
 DEBUG:root:Snippet Retrieved successfully. Snippet Value: ('Block of code which program can reuse',)
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='def', snippet='a function')
+DEBUG:root:--------------------
+arguments:{'snippet': 'a function', 'name': 'def'}
+INFO:root:Storing snippet 'def': 'a function'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='def', snippet='a function')
+DEBUG:root:--------------------
+arguments:{'name': 'def', 'snippet': 'a function'}
+INFO:root:Storing snippet 'def': 'a function'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='def')
+DEBUG:root:--------------------
+arguments:{'name': 'def'}
+INFO:root:Retriving snippet 'def'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: ('a function',)
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='sdf')
+DEBUG:root:--------------------
+arguments:{'name': 'sdf'}
+INFO:root:Retriving snippet 'sdf'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: None
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='for', snippet='Control flow for looping')
+DEBUG:root:--------------------
+arguments:{'name': 'for', 'snippet': 'Control flow for looping'}
+INFO:root:Storing snippet 'for': 'Control flow for looping'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='for')
+DEBUG:root:--------------------
+arguments:{'name': 'for'}
+INFO:root:Retriving snippet 'for'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='for')
+DEBUG:root:--------------------
+arguments:{'name': 'for'}
+INFO:root:Retriving snippet 'for'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='for')
+DEBUG:root:--------------------
+arguments:{'name': 'for'}
+INFO:root:Retriving snippet 'for'.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='get', name='for')
+DEBUG:root:--------------------
+arguments:{'name': 'for'}
+INFO:root:Retriving snippet 'for'.
+DEBUG:root:Snippet Retrieved successfully. Snippet Value: ('Control flow for looping',)
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:--------------------
+parser.parse_args():
+Namespace(command='put', name='for', snippet='test')
+DEBUG:root:--------------------
+arguments:{'name': 'for', 'snippet': 'test'}
+INFO:root:Storing snippet 'for': 'test'
