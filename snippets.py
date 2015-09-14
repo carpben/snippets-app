@@ -81,7 +81,8 @@ def main():
     
     catalog_parser=subparsers.add_parser("catalog", help="Presents a catalog of snippets names")
     
-    search_parser=subparsers.add_parser("search", help="User provides a string. Prgram Searches for snippets with the string andprints results to screen.")
+    search_parser=subparsers.add_parser("search", help="""User provides a 
+    string. Prgram Searches for snippets with the string andprints results to screen.""")
     search_parser.add_argument("string", help="String to search for")
     
     logging.debug('{}\nparser.parse_args():\n{}'.format('-'*20, parser.parse_args()))
